@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO-DO LIST</title>
+        <link rel="stylesheet" href="mylist.css">
+    </head>
+    <body background="img6.jpg";>
+        <div class="main">
+            <h1>--MY TODO LIST--</h1>
+            <div class="header">
+                <p><span id="date"></span></p>
+                <div class="input-list">
+                    <input type="text" id="list" placeholder="Add task" >
+                    <button type="button" class="button" onclick="addTask()" >
+                        <span class="button__text">ADD TO LIST</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                      </button>
+                </div>
+            </div>
+            <ol id="todo"></ol>
+        </div>
+        <script src="mylist.js"></script>
+    </body>
+</html>

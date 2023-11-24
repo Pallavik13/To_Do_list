@@ -1,0 +1,183 @@
+@media screen and (max-width: 800px) {
+  .form-box {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width:50%;
+  }
+  }
+  @media screen and (max-width: 600px) {
+  .form-box {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    position: relative;
+    top: 80px;
+    left: 100px;
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    opacity: 0.8;
+}
+.main h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+    font-size: 40px;
+    color: rgb(71, 71, 71);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0px 0px 10px 0px;
+}
+.input-list input{
+    position: relative;
+    top: 00px;
+    left: -350px;
+    width: 250px;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border: none;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+  .button {
+    position: relative;
+    top: -38px;
+    left: -100px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #808080;
+    background-color: #808080;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(120 px);
+    height: 80%;
+    width: 20px;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #808080;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 130px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #808080;
+  }
+  
+  .button:active {
+    border: 1px solid #808080;
+  }
+ol{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-controller {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 5px white;
+  }
+  
+  .edit-controller {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .update-controller {
+    display: none;
+  }
+  
+  @media(max-width: 768px) {
+    .app {
+      width: 95%;
+      text-align: center;
+    }
+  
+    .header {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+  
+    .input-list {
+      display: flex;
+    }
+  
+    .input-list input {
+      width: 300px;
+    }
+  
+  }
